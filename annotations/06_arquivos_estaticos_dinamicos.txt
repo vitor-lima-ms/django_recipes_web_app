@@ -1,0 +1,15 @@
+- Arquivos dinamicos sao arquivos entregues exatamente como estao salvos, independentemente do usuario que esta acessando a url
+    
+        - Esses arquivos quase não sofrem alteracoes -> O navegador pode salva-los em cache para que o conteudo da pagina carregue mais rapidamente
+        - Alguns provedores de internet tambem adicionam servidores no meio da rede que tambem podem fazer cache desses arquivos -> Assim, o proprio provedor economiza sua banda de internet externa
+
+    - Frequentemente, sites adicionam seu conteudo estatico em CDNs(Content Delivery Network) -> Servidores otimizados para entrega de arquivos estaticos tanto em velocidade de entrega quanto em manter os arquivos na localizacao mais proxima do usuario final
+
+    - Usamos CDNs quando importamos a font-awsome
+        - O Django consegue lidar com arquivos estaticos no seu servidor ou em CDNs
+
+    - Tipos de arquivos que podem ser considerados estáticos: Imagens, vídeos, HTML, CSS, JavaScript, arquivos de download etc
+
+- Arquivos dinamicos
+    - e.g., Dashboards --> Para cada usuario da aplicacao, a pagina exibida certamente apresentara diferencas
+    - Paginas que apresentam comportamento diferente em situacoes diferentes

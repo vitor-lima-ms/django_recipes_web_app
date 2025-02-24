@@ -1,0 +1,4 @@
+- Representa uma tabela na base de dados
+- O proprio Django faz o trabalho de converter o nosso codigo em tabelas da base de dados
+- Podemos utilizar qualquer base de dados, uma vez que o Django faz a conversao automatica para qualquer uma
+- Sao classes, onde as colunas da base dados serao os atributos da classe

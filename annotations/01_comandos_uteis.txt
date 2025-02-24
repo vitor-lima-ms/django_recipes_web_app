@@ -1,0 +1,29 @@
+python manage.py ≃ django-admin
+
+django-admin --version -> Mostra a versao do Django
+
+django-admin --help
+
+django-admin startproject [nome] [.] -> Inicia o projeto
+    . no final indica pro Django onde queremos que o projeto seja criado
+    sem o ., ele criaria uma pasta com o nome do projeto e, dentro dela, um arquivo chamado manage.py e outra pasta com o mesmo nome do projeto
+
+python manage.py runserver
+    Executa o servidor em modo de desenvolvimento
+
+python manage.py startapp [nome do app]
+    Inicia um app
+
+python manage.py collectstatic
+    Utilizado para coletar todos os arquivos estaticos
+    Temos que configurar o STATIC_ROOT para funcionar
+
+python manage.py makemigrations -> Cria o arquivo de migracao na pasta migrations do app -> Nunca excluir ou editar manualmente esse arquivo
+    Gera as PK (id) automaticamente
+
+python manage.py migrate -> Migra as migracoes da pasta Migrations para a base de dados
+
+python manage.py createsuperuser -> Cria um superusuario que pode fazer tudo na base de dados
+
+python manage.py test
+    Faz um unit test

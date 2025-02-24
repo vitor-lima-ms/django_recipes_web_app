@@ -1,0 +1,9 @@
+{% extends "global/base.html" %}
+
+{% block title %}{{title}}|{% endblock title %}
+
+{% block css %}{% include "recipes_app/partials/recipe_css.html" %}{% endblock css %}
+
+{% block content %}
+{% include "recipes_app/partials/recipe_content.html" %}
+{% endblock content %}

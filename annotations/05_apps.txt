@@ -1,0 +1,13 @@
+ - Pasta Migrations -> Migracoes de bases de dados -> ORM do Django
+
+ - __init__.py -> Indica que a pasta e um pacote do Python -> Podemos utiliza-la para carregar pacotes
+
+ - admin.py -> Local para registar os models
+
+ - models.py
+
+ - apps.py -> Nome do nosso app
+
+ - tests.py -> Referente a testes
+
+ - views.py -> Local onde colocaremos as views do path do urls patterns

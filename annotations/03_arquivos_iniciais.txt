@@ -1,0 +1,12 @@
+- dbsqlite3 -> Arquivo de base de dados inicial -> Usando apenas durante o desenvolvimento
+
+- manage.py -> Faz a mesma coisa que o django-admin -> Os comandos do django-admin podem ser executados pelo manage.py -> A diferenca e que o manage.py configura uma variavel de ambiente (DJANGO_SETTINGS_MODULE) que aponta para onde esta o arquivo de settings.py -> Quando utilizamos o manage.py, todas as configuracoes presentes no settings.py serao carregadas
+    So utilizamos django-admin somente para iniciar o projeto
+
+- settings.py -> A maioria dos comandos executados dentro do Django são buscados no settings.py -> Todas as configuracoes necessarias para que o Django funcione corretamente estao neste arquivo
+
+- __init__.py -> Indica que a pasta e um pacote do Python -> Podemos utiliza-la para carregar pacotes
+
+- asgi.py e wsgi.py -> Ambos sao utilizados para fazer a ligacao entre o Django e um servidor web externo
+
+- urls.py -> Porta de entrada da nossa aplicacao -> A partir do endereco digitado no navegador, sao carregadas as configuracoes de url de cada aplicativo criado

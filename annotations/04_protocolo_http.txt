@@ -1,0 +1,24 @@
+- Protocolo utilizado para navegar na internet
+
+- Funciona com request e response
+    O cliente faz uma request para o site e o servidor do site deve retornar uma response
+
+- Status code
+    Cada numero representa um comportamento de response
+    https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
+
+    - Metodos de requisicao
+        https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods
+        GET -> Queremos ler alguma coisa
+        PUT ou POST -> Queremos criar ou editar alguma coisa no servidor
+    
+    - Request Headers
+        Accept -> Formatos aceitos como response
+        Accept Encoding -> Encodings aceitos como response
+        Accept Language -> Linguagens aceitas como response
+    
+    - Response Headers
+        Content Length -> Tamanho do conteudo
+        Content Type -> Tipo do conteudo e codificacao
+        Date -> Data do response
+        Server -> Servidor que respondeu

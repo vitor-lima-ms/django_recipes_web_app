@@ -1,0 +1,62 @@
+<div class="content">
+    {% if recipe.cover %}
+        <img src="{{recipe.cover.url}}" alt="Foto">
+    {% endif %}
+    <div class="recipe_title">
+        <h2>{{recipe.recipe_title}}</h2>
+    </div>
+    <div class="infos">
+        <span>
+            <i class="fas fa-user"></i>
+            {% if recipe.author %}
+                {% if recipe.author.first_name %}
+                    {{recipe.author.first_name}}
+                    {{recipe.author.last_name}}
+                {% else  %}
+                    {{recipe.author}}
+                {% endif %}
+            {% else %}
+                Anônimo
+            {% endif %}
+        </span>
+        <span>
+            <i class="fas fa-calendar"></i>
+            {{recipe.created_at|date:"d/m/Y"}}
+        </span>    
+        <span>
+            <i class="fas fa-layer-group"></i>
+            {% if recipe.category.name %}
+                <a href="{% url 'recipes_app:category' recipe.category.id %}">{{recipe.category.name}}</a>
+            {% endif %}            
+        </span>
+    </div>
+    <div class="app">
+        {{recipe.description}}
+    </div>
+    <div class="other_infos">
+        <table>
+            <tbody>
+                <tr>                          
+                    <th><i class="fas fa-clock"></i>Preparo</th>
+                    <th><i class="fas fa-pizza-slice"></i>Porções</th>
+                </tr>
+                <tr>
+                    <td>
+                        {{recipe.preparation_time}}
+                        {{recipe.preparation_time_unit}}
+                    </td>
+                    <td>
+                        {{recipe.servings}}
+                        {{recipe.servings_unit}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="see_more">
+        <span>
+            <i class="fas fa-eye"></i>
+            <a href="{% url 'recipes_app:recipe' recipe.id %}">Veja mais...</a>
+        </span>
+    </div>
+</div>

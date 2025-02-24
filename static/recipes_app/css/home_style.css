@@ -1,0 +1,191 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: lightgray;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        height: 75px;
+        margin-bottom: 20px;
+        position: sticky;
+        background-color: #000000;
+        top: 0;
+    }
+    .fa-cutlery{
+        margin-right: 5px;
+        font-size: 30px;
+        color: whitesmoke;
+    }
+    #header_recipe{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        width: fit-content;
+    }
+    #header_recipe a{
+        text-decoration: none;
+    }
+    #header_recipe b{
+        font-family: Montserrat;
+        font-weight: bolder;
+        font-size: 35px;
+        color: whitesmoke;
+    }
+    #div_search_box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 100%;
+    }
+    #form_search_box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 75%;
+        width: 50%;
+        border: 2px solid #000000;
+        border-radius: 10px;
+        background-color: whitesmoke;
+    }
+    #search_box{
+        width: 95%;
+    }
+    #search_box, #search_button{
+        padding: 5px;
+        background: none;
+        border: none;                
+        outline: none;
+    }
+    #search_button:hover{
+        scale: 1.25;
+        transition: all 300ms ease-in-out;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        align-items: end;
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        width: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+        background-color: whitesmoke;
+    }
+    .content:hover{
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 1);
+        transition: all 300ms ease-in-out;
+    }
+    .content img{
+        width: 400px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .recipe_title{
+        width: 90%;
+        text-align: left;
+        font-family: Montserrat;
+    }
+    .infos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        padding-bottom: 20px;
+        font-family: Montserrat;
+        font-size: small;
+    }
+    .infos a{
+        color: #000000;
+    }
+    .app{
+        display: flex;
+        width: 90%;
+        padding-bottom: 20px;
+        text-align: justify;
+        font-family: Montserrat;
+    }
+    .other_infos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-family: Montserrat;
+        line-height: 1.5;
+        color: whitesmoke;
+        background-color: #444444;
+    }
+    .other_infos table{
+        width: 90%;
+    }
+    .other_infos td{
+        text-align: center;
+    }
+    .fa-clock, .fa-pizza-slice{
+        margin-right: 5px;
+    }
+    .see_more{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-family: Montserrat;
+        font-size: small;
+        font-weight: bold;
+        color: whitesmoke;
+        background-color: #000000;
+    }
+    .see_more a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    .see_more span:hover{
+        scale: 1.05;
+        transition: all 300ms ease-in-out;
+    }
+    .fa-eye{
+        margin-right: 5px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        color: whitesmoke;
+        background-color: #000000;
+    }
+    footer div{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+    footer span{
+        margin: 10px;
+        font-family: Montserrat;
+        font-size: small;
+    }
+    footer a{
+        text-decoration: none;
+        color: whitesmoke;
+    }

@@ -1,0 +1,9 @@
+- Salvando informacoes na base de dados
+
+- Utiliza um sistema muito parecido com o git (versionamento -> 00XX)
+
+- Qualquer criacao/edicao de um model deve ser migrada para a base de dados
+    - python manage.py makemigrations -> Cria o arquivo de migracao na pasta migrations do app -> Nunca excluir ou editar manualmente esse arquivo
+        - Gera as PK (id) automaticamente
+    
+    - python manage.py migrate -> Migra as migracoes da pasta Migrations para a base de dados

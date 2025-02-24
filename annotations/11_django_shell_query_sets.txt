@@ -1,0 +1,54 @@
+**QuerySet = Iteravel** -> É uma API -> Tem documentacao
+
+1- Abrir o terminal
+
+2- python manage.py shell
+
+3- from [pasta do app].models import [models]
+
+4- [variavel] = [model].objects.all() -> Pega todos os objetos do model
+    [variavel] = [model].objects.get([atributo]=[valor]) -> Retorna apenas o objeto com aquele valor de atributo -> Levanta um erro se nao existir
+    [variavel] = [model].objects.filter([atributo]=[valor]) -> Tambem retorna apenas o objeto com aquele valor de atributo mas como um QuerySet -> Nao levanta um erro se nao existir
+
+5- [variavel].order_by('id') -> Ordena pelo id (crescente)
+
+6- [variavel].order_by('-id') -> Ordena pelo id (decrescente)
+
+7- [variavel].order_by('[qualquer campo dentro do model]')
+
+8- [variavel].order_by('[qualquer campo dentro do model], [outro campo]') -> Podemos ordenar com 2 campos
+
+9- for [objeto] in [model]: print([objeto].[atributo])
+
+10- [variavel].order_by('[qualquer campo dentro do model]').first() -> Retorna o primeiro elemento da QuerySet
+    Para colocar como titulo de uma pagina --> QuerySet.first.[atributo]
+    .last() retorna o ultimo
+
+11- [outra variavel] = [variavel].first()
+
+12- [outra variavel]._meta.get_fields() -> Mostra todos os campos do objeto
+
+13- [outra variavel]._meta.get_fields()[indice] -> Mostra o campo referente ao indice
+
+14- getattr([outra variavel], [atributo]) -> Mostra o valor do atributo
+
+15- [outra variavel].[atributo] -> Outra forma de mostrar o valor do atributo
+
+16- Criar um objeto de um model que nao tem PK
+    new_object = Model()
+    new_object.name = [nome qualquer]
+    new_object.save() -> Salva na base de dados -> So tera id se for salva
+
+    Outra forma de criar um objeto
+        new_object = [model].objects.create() -> Cria e ja salva na base de dados -> Temos que passar os atributos do model dentro do create()
+
+    Atualizando um atributo
+        new_object.[atributo] = [novo valor]
+        new_object.save()
+    
+    Deletando
+        new_object.delete()
+
+17- Cadastrar novo usuario
+    from django.contrib.auth.models import User
+    User.objects.create_user(first_name='', last_name='', username='', email='', password='')

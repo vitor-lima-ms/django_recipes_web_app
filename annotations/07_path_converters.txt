@@ -1,0 +1,5 @@
+- str -> Aceita qualquer coisa na url que não seja /
+- int -> Aceita 0 ou qualquer numero inteiro
+- slug -> Aceita str com letras e numeros ASCII, hífen e underline
+- uuid
+- path

@@ -1,0 +1,17 @@
+{% extends "global/base.html" %}
+
+{% block title %}Home|{% endblock title %}
+
+{% block css %}{% include "recipes_app/partials/home_css.html" %}{% endblock css %}
+   
+{% block search_box %}{% include "recipes_app/partials/search_box.html" %}{% endblock search_box %}
+
+{% block content %}
+    {% for recipe in recipes %}
+        {% include "recipes_app/partials/home_content.html" %}
+    {% empty %}
+        {% load static %}
+        <img src="{% static "recipes_app/img/empty.png" %}" width="500">
+        {% comment %} Conteudo que sera exibido caso nao haja nenhuma receita cadastrada {% endcomment %}
+    {% endfor %}
+{% endblock content %}

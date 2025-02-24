@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    {% include "recipes_app/partials/head.html" %}
+        <title>{% block title %}{% endblock title %}Recipes</title>
+        {% block css %}{% endblock css %}
+    </head>
+    <body>
+        {% include "recipes_app/partials/header.html" %}
+        {% block search_box %}{% endblock search_box %}
+        <main>
+            {% block content %}{% endblock content %}
+        </main>    
+        {% include "recipes_app/partials/footer.html" %}
+    </body>
+</html>
