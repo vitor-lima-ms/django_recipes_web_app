@@ -1,3 +1,1 @@
-# Django projects
-
-1- Recipe web app (in progress)
+Simple web application that allows users to register various recipes
